@@ -1,0 +1,73 @@
+(.venv) adrianas@192 lab % python ex2.py
+Training samples: 400
+Testing samples: 100
+Number of features: 2
+Training contamination: 0.1
+Testing contamination: 0.1
+
+--- Training Data ---
+Confusion matrix:
+[[359   1]
+ [  4  36]]
+TN (True Negatives): 359
+TP (True Positives): 36
+FN (False Negatives): 4
+FP (False Positives): 1
+Balanced Accuracy: 0.9486
+
+--- Testing Data ---
+Confusion matrix:
+[[90  0]
+ [ 1  9]]
+TN (True Negatives): 90
+TP (True Positives): 9
+FN (False Negatives): 1
+FP (False Positives): 0
+Balanced Accuracy: 0.9500
+
+--- Effect of Contamination ---
+ Contamination | Train BAcc | Test BAcc | Test AUC
+-------------------------------------------------------
+          0.01 |     0.5250 |    0.5000 |   0.9644
+          0.05 |     0.6750 |    0.7500 |   0.9644
+          0.10 |     0.9486 |    0.9500 |   0.9644
+          0.20 |     0.9472 |    0.9222 |   0.9644
+          
+
+(.venv) adrianas@192 lab % python ex3.py
+Training samples: 1000
+Number of features: 1
+Actual contamination: 0.1
+Z-score threshold: 0.9297742034791009
+
+Confusion matrix:
+[[871  29]
+ [ 29  71]]
+TN: 871
+TP: 71
+FN: 29
+FP: 29
+Balanced accuracy: 0.8389
+
+
+(.venv) adrianas@192 lab % python ex4.py   
+Number of samples: 1000
+Number of features: 2
+Actual contamination: 0.1
+Mean vector: [ 2. -1.]
+Covariance matrix:
+ [[2.  0.8]
+ [0.8 1.5]]
+Cholesky factor L:
+ [[1.41421356 0.        ]
+ [0.56568542 1.08627805]]
+Z-score threshold: 1.7140293811989717
+
+Confusion matrix:
+[[876  24]
+ [ 24  76]]
+TN: 876
+TP: 76
+FN: 24
+FP: 24
+Balanced accuracy: 0.8667
