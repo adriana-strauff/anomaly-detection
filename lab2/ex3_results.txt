@@ -1,0 +1,24 @@
+(.venv) adrianas@192 lab2 % python ex4.py
+
+KNN results:
+Neighbors	Train BA	Test BA
+30		0.7073		0.6740
+40		0.7163		0.6864
+50		0.7253		0.7147
+60		0.7253		0.7242
+70		0.7343		0.7430
+80		0.7477		0.7525
+90		0.7522		0.7525
+100		0.7522		0.7525
+110		0.7477		0.7535
+120		0.7522		0.7639
+
+Average strategy:
+Threshold: 0.9420
+Train BA: 0.7298
+Test BA: 0.7430
+
+Maximization strategy:
+Threshold: 1.0360
+Train BA: 0.7522
+Test BA: 0.7525

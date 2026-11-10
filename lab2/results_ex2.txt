@@ -1,0 +1,11 @@
+(.venv) adrianas@192 lab2 % python ex2.py
+
+Balanced Accuracy Results
+-------------------------------------------------------
+Neighbors      Train Accuracy      Test Accuracy       
+3              0.9512              1.0000              
+5              0.9634              1.0000              
+10             0.9878              1.0000              
+20             0.9878              1.0000              
+50             0.9878              1.0000              
+100            0.9878              1.0000
